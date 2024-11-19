@@ -17,7 +17,7 @@ while True:
 	ret, thresh = cv2.threshold(
 		gray, 0, 255, cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
 
-	cv2.imshow("treshold", thresh)
+	cv2.imshow("threshold", thresh)
 	# Find the contours of the objects in the image
 	contours, hierarchy = cv2.findContours(
 		thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
